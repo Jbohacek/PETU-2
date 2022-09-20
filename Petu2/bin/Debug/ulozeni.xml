@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfHra.Pet xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Petu2">
+	<Hra.Pet>
+		<Hunger>490</Hunger>
+		<ImageToString>Cutecat</ImageToString>
+		<Level>0</Level>
+		<Name>vbccvb</Name>
+		<chests>
+			<Hra.Chest>
+				<ID>Open me!_Chest_Rare__1597316801</ID>
+				<Name>Open me!</Name>
+				<Picture>WoodenChestClosed</Picture>
+				<Typ>Chest</Typ>
+				<rarity>Rare</rarity>
+				<ChestTier>Wooden</ChestTier>
+			</Hra.Chest>
+		</chests>
+		<foods>
+			<Hra.Food>
+				<ID>Apple_Food_Epic__1597316801</ID>
+				<Name>Apple</Name>
+				<Picture>Apple</Picture>
+				<Typ>Food</Typ>
+				<rarity>Epic</rarity>
+				<HowMuchToAdd>50</HowMuchToAdd>
+			</Hra.Food>
+		</foods>
+		<graphicCards />
+		<hats />
+		<tickets>
+			<Hra.Ticket>
+				<ID>Begginer Trial_Ticket_Legendary__1597316801</ID>
+				<Name>Begginer Trial</Name>
+				<Picture>WaterBottle</Picture>
+				<Typ>Ticket</Typ>
+				<rarity>Legendary</rarity>
+			</Hra.Ticket>
+		</tickets>
+		<xp>0</xp>
+		<xpRange xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+	</Hra.Pet>
+</ArrayOfHra.Pet>

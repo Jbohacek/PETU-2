@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{028578E3-945C-4185-9DC3-DF037DC4A93A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Petu2</RootNamespace>
+    <AssemblyName>Petu2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Lobby\CreateScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lobby\CreateScreen.Designer.cs">
+      <DependentUpon>CreateScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lobby\LoadScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lobby\LoadScreen.Designer.cs">
+      <DependentUpon>LoadScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lobby\LoadBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lobby\LoadBox.Designer.cs">
+      <DependentUpon>LoadBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lobby\MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lobby\MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hra.cs" />
+    <Compile Include="MainGame\Adventure\Adventure.cs" />
+    <Compile Include="MainGame\Adventure\GameRoomTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainGame\Adventure\GameRoomTemplate.Designer.cs">
+      <DependentUpon>GameRoomTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGame\Adventure\RoomTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainGame\Adventure\RoomTemplate.Designer.cs">
+      <DependentUpon>RoomTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGame\Dungeon\LoadingBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainGame\Dungeon\LoadingBox.Designer.cs">
+      <DependentUpon>LoadingBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGame\Dungeon\PlayDungeon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainGame\Dungeon\PlayDungeon.Designer.cs">
+      <DependentUpon>PlayDungeon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGame\Dungeon\Policko.cs" />
+    <Compile Include="MainGame\Dungeon\Pozadi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pozadi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MainGame\InLobby\ChestOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainGame\InLobby\ChestOpen.Designer.cs">
+      <DependentUpon>ChestOpen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGame\InLobby\InventoryScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainGame\InLobby\InventoryScreen.Designer.cs">
+      <DependentUpon>InventoryScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGame\InLobby\InventorySlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainGame\InLobby\InventorySlot.Designer.cs">
+      <DependentUpon>InventorySlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGame\InLobby\LeftControlPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainGame\InLobby\LeftControlPanel.Designer.cs">
+      <DependentUpon>LeftControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGame\InLobby\MainGameScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainGame\InLobby\MainGameScreen.Designer.cs">
+      <DependentUpon>MainGameScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGame\InLobby\MainMinimazed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainGame\InLobby\MainMinimazed.Designer.cs">
+      <DependentUpon>MainMinimazed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGame\InLobby\SettingMinimazed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainGame\InLobby\SettingMinimazed.Designer.cs">
+      <DependentUpon>SettingMinimazed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGame\InLobby\SettingsMinimazedSetUp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>SettingsMinimazedSetUp.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Obrazky\ItemPic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemPic.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Obrazky\MainPic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MainPic.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Obrazky\PetsPic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PetsPic.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Lobby\CreateScreen.resx">
+      <DependentUpon>CreateScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lobby\LoadScreen.resx">
+      <DependentUpon>LoadScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lobby\LoadBox.resx">
+      <DependentUpon>LoadBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lobby\MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGame\Adventure\GameRoomTemplate.resx">
+      <DependentUpon>GameRoomTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGame\Adventure\RoomTemplate.resx">
+      <DependentUpon>RoomTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGame\Dungeon\LoadingBox.resx">
+      <DependentUpon>LoadingBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGame\Dungeon\PlayDungeon.resx">
+      <DependentUpon>PlayDungeon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGame\Dungeon\Pozadi.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Pozadi.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGame\InLobby\ChestOpen.resx">
+      <DependentUpon>ChestOpen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGame\InLobby\InventoryScreen.resx">
+      <DependentUpon>InventoryScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGame\InLobby\InventorySlot.resx">
+      <DependentUpon>InventorySlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGame\InLobby\LeftControlPanel.resx">
+      <DependentUpon>LeftControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGame\InLobby\MainGameScreen.resx">
+      <DependentUpon>MainGameScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGame\InLobby\MainMinimazed.resx">
+      <DependentUpon>MainMinimazed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGame\InLobby\SettingMinimazed.resx">
+      <DependentUpon>SettingMinimazed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Obrazky\ItemPic.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ItemPic.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Obrazky\MainPic.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MainPic.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Obrazky\PetsPic.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PetsPic.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="MainGame\InLobby\SettingsMinimazedSetUp.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>SettingsMinimazedSetUp.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Missing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cutecat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red panda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squrtle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EmptyFileTemplate.txt" />
+    <None Include="Resources\BackgroundTemplate.png" />
+    <None Include="Resources\Testovaci2.png" />
+    <None Include="Resources\Testovaci.png" />
+    <None Include="Resources\Testovaci4.png" />
+    <None Include="Resources\Testovaci3.png" />
+    <None Include="Resources\GoldChestClosed.png" />
+    <None Include="Resources\IronChestOpen.png" />
+    <None Include="Resources\IronChestClosed.png" />
+    <None Include="Resources\GoldChestOpen.png" />
+    <None Include="Resources\WoodenChestClosed.png" />
+    <None Include="Resources\WoodenChestOpen.png" />
+    <None Include="Resources\WaterBottle.png" />
+    <None Include="Resources\Muffin.png" />
+    <None Include="Resources\HearthBottle.png" />
+    <None Include="Resources\Apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MainGame\MiniGames\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
