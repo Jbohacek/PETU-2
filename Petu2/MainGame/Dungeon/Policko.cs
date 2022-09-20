@@ -11,7 +11,7 @@ namespace Petu2.MainGame.Dungeon
     public class Policko
     {
         public enum Typy { None,Empty, Starter, Tresure, LockTresure };
-
+        //Typy
         public Policko.Typy Typ = new Typy();
         public bool RoomVidno = false;
         public Point PolohaXY;
